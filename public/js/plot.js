@@ -14,7 +14,15 @@ var data = [trace1];
 var layout = {
     title: 'Your Current Favorite Songs',
     showlegend: false,
-    modebar: false,
+    xaxis: {
+        showgrid: false,
+        zeroline: false,
+        showticklabels: false
+    },
+    yaxis: { 
+        showgrid: false,
+        zeroline: false
+    }
 };
 
 Plotly.newPlot('myDiv', data, layout);
